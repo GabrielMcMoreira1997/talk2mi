@@ -12,7 +12,7 @@ const Page = (rating : string) => {
     <div className="container mx-auto m-w-lg px-2">
       <UserProvider>
         <ChatProvider>
-          <h1 className="text-3xl my-3 text-center">Chat Simples</h1>
+          <h1 className="text-3xl my-3 text-center">talk2mi Chat</h1>
 
           <Chat/>
         </ChatProvider>
