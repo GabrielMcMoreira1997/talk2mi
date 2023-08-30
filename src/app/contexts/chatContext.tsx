@@ -1,4 +1,4 @@
-import { ReactNode, createContext, useReducer } from "react";
+import { ReactNode, createContext, useContext, useReducer } from "react";
 import { Message } from "../types/Message";
 import { chatReducer } from "../reducers/chatReduder";
 
@@ -24,3 +24,5 @@ export const ChatProvider = ({children} : {children: ReactNode}) => {
     <ChatContext.Provider value={{chat, addMessage}}>{children}</ChatContext.Provider>
     );
 }
+
+export const useChat = () => useContext(ChatContext);
